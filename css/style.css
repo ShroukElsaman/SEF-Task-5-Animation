@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/satrstasratssrtas.jpeg);
+  background-size: cover;
+}
+.one,
+.three,
+.five {
+  display: flex;
+  justify-content: right;
+  margin: 50px auto;
+  animation-name: playing;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  /* animation-iteration-count: infinite; */
+}
+.two,
+.four,
+.six {
+  animation-name: playing-reverse;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  /* animation-iteration-count: infinite; */
+
+}
+.two {
+  animation-delay: 2s;
+}
+.three {
+  animation-delay: 4s;
+}
+.four {
+  animation-delay: 6s;
+}
+.five {
+  animation-delay: 8s;
+}
+.six {
+  animation-delay: 10s;
+}
+.img1 {
+  width: 200px;
+  height: 200px;
+}
+@keyframes playing {
+  100% {
+    transform: translateX(-1050px);
+  }
+}
+@keyframes playing-reverse {
+  100% {
+    transform: translateX(1050px);
+  }
+}
